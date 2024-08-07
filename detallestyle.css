@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Banner arriba */
+
+.parteArriba {
+  width: 100%;
+  height: 50px;
+  background: #4670B6;
+  display: flex;
+  align-items: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.parteArriba a{
+  margin-left: 2%;
+}
+
+.dniDigital {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+a i, button i{
+  color: #FFFFFF;
+}
+
+.restaurarBoton {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+/* Dni */
+
+.fondoDni {
+  width: 100%;
+  height: 304px;
+  background: #F8F8F8;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  perspective: 1000px;
+}
+
+#fechaHora{
+  color: #757575;
+  font-style: normal; 
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 8px;
+  letter-spacing: 0.005em;
+  display: flex;
+  justify-content: center;
+}
+
+#card-container {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  pointer-events: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 358px;
+  height: 225px;
+  backface-visibility: hidden;
+  transition: transform 0.7s ease;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.45);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.45);
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.45);
+  border: none;
+}
+
+#card-front {
+  z-index: 2;
+  display: block;
+}
+
+#card-back {
+  z-index: 1; 
+  display: none; 
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Textos */
+
+.elemento{
+  width: 92%;
+  display: flex;
+  align-items: center;
+  margin: 0 4%;
+  margin-top: 34px;
+}
+
+.elemento i{
+  font-size: 18px;
+  color: #3471B3;
+}
+
+.texto{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14.5px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #444444;
+}
+
+.boton-llamada{
+  margin-left: 2px;
+  background: #FFFFFF;
+  border: none;
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.boton-llamada i{
+  margin-right: 15px;
+}
+
+.elemento a{
+  text-decoration: none; 
+  width: 100%; 
+  display: flex;
+}
+
+.elemento a i{
+  margin-right: 15px;
+}
+

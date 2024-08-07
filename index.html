@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mi documento | Mi Argentina</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="detalleStyle.css">
+    <link rel="icon" type="image/png" href="miarg.png">
+    <meta name="apple-mobile-web-app-capable" content="yes" data-react-helmet="true">
+</head>
+<body>
+    
+        <div class="parteArriba" style="justify-content: space-between;">
+            <a href='/'><i class="material-icons">arrow_back_ios</i></a>
+
+            <h1 class="dniDigital" style="text-align: center;">DNI Digital</h1>
+
+            <button class="restaurarBoton" onclick="mostrarFechaHora()"><i class="material-icons">history</i></button>
+            
+        </div>
+
+        <div class="fondoDni">
+            <p id="fechaHora"></p>
+            <div id="card-container">
+                <button id="card-front" class="card">
+                  <img id="imagen-frente" src="frente.jpeg" alt="imagen-frente">
+                </button>
+                <button id="card-back" class="card">
+                  <img id="imagen-dorso" src="dorso.jpeg" alt="imagen-dorso">
+                </button>
+            </div>
+        </div>
+
+        <div>
+                <div class="elemento">
+                    <a href='/datosdni'>
+                        <i class="material-icons">stay_current_landscape</i>
+                        <div>
+                            <p class="texto Pantalla">Ver detalle de mi DNI Digital</p>
+                        </div>
+                    </a>
+                </div>
+            
+                <div class="elemento">
+                    <button class="boton-llamada" onclick="redirectToTwoPages()">
+                        <i class="fa fa-phone"></i>
+                        <div>
+                            <p class="texto Llamada">Mesa de ayuda</p>
+                        </div>
+                    </button>
+                </div>
+            
+            
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="detalleDni.js"></script>
+    
+</body>
+</html>     
