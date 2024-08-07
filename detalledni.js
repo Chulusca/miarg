@@ -47,8 +47,8 @@ function drag(event) {
     if (!isDragging) return;
     const currentX = getX(event);
     const deltaX = currentX - startX;
-    if (Math.abs(deltaX) > 5) { 
-        angle += deltaX > 0 ? 1 : -1; 
+    if (Math.abs(deltaX) > 2) { 
+        angle += deltaX > 0 ? 3 : -3;
         startX = currentX;
         cardContainer.style.transform = `rotateY(${angle}deg)`;
     }
