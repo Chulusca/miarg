@@ -53,7 +53,7 @@ function drag(event) {
         cardContainer.style.transform = `rotateY(${angle}deg)`;
     }
 }
-
+    
 function endDrag() {
     isDragging = false;
     if (angle % 180 !== 0) { 
